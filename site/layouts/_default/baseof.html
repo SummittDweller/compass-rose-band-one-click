@@ -1,17 +1,19 @@
-<!doctype html>
-<html lang="{{ $.Site.Language.Lang }}">
-  {{ partial "head" . }}
-  <body class="sans-serif">
+{{ `<!-- enter: _default/baseof.html -->` | safeHTML }}
 
-    {{ block "header" . }}{{ partial "nav" . }}{{end}}
-
-    {{ block "main" . }}{{ end }}
-
-    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
-
-    {{ $script := .Site.Data.webpack.main }}
-    {{ with $script.js }}
-      <script src="{{ relURL . }}"></script>
-    {{ end }}
+<!DOCTYPE html>
+<html lang="{{.Site.Language.Lang }}">
+  <meta charset="utf-8">
+  {{- partial "seo_schema" . -}}
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  {{- partial "head.html" . -}}
+  <body>
+    {{- partial "header.html" . -}}
+    <main role="main">
+    {{- block "main" . }}{{- end }}
+    </main>
+    {{- partial "footer.html" . -}}
+    {{- partial "js.html" . -}}
   </body>
 </html>
+
+{{ `<!-- exit: _default/baseof.html -->` | safeHTML }}
