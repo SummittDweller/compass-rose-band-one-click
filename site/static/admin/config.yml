@@ -66,8 +66,9 @@ collections:
 
       - label: Date
         name: date
-        hint: Enter the date of the performance in YYYY-MM-DD format.
-        pattern: [ '\d{4}\-(0[1-9]|1[012])\-(0[1-9]|[12][0-9]|3[01])', "Must be in YYYY-MM-DD format." ]
+        widget: date
+        format: YYYY-MM-DD
+        hint: Select the date of the performance. Saved in YYYY-MM-DD format.
 
       - label: Start Time
         name: startTime
