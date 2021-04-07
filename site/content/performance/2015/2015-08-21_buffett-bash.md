@@ -1,5 +1,5 @@
 ---
-title: "2015-08-21 - Buffett Bash"
+title: "Buffett Bash 2015"
 type: performance
 date: 2015-08-21
 startTime: "4pm"

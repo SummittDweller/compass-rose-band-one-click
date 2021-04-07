@@ -1,5 +1,5 @@
 ---
-title: "2015-08-01 - Bobber's Grill"
+title: "Bobber's Grill"
 type: performance
 date: 2015-08-01
 startTime: "6pm"
