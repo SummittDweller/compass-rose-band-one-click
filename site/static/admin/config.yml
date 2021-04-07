@@ -2,10 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-## To make local_backend mode work you must run 'npx netlify-cms-proxy-server &'
-##   from the project root.
-## Also, use 'git local' (aliased in .gitconfig) to remove the 'site' prefix from each
-##   of the path values below.  Use 'git restore' to change it back.
+## For local_backend to work run 'npx netlify-cms-proxy-server &' from the project root.
 local_backend: true
 
 # backend:
@@ -13,14 +10,14 @@ local_backend: true
 #   repo: SummittDweller/wieting-theatre-netlify
 #   branch: main
 
-media_folder: site/static/img    # site/static/img
+media_folder: site/static/img    
 public_folder: /img
 
 collections:
   - name: performance
     label: Performance
-    identifier_field: date
-    folder: site/content/performance    # site/content/performance
+    identifier_field: title
+    folder: site/content/performance   
     create: true
     
     slug: '{{slug}}'
@@ -56,10 +53,12 @@ collections:
         name: title
         widget: string
         required: true
+        hint: "Prefered form is '<date> - <title>', like '2015-05-05 - Bobber's Grill'."
 
       - label: Type
         name: type
         default: performance
+        widget: hidden
 
       - label: Body
         name: body
@@ -82,16 +81,20 @@ collections:
 
       - label: Start Time
         name: startTime
+        hint: "Enter a short string like '7pm' for the start time."
 
       - label: End Time
         name: endTime
+        hint: "Enter a short string like '1:30am' for the end time."
 
       - label: City
         name: city
+        required: false
 
       - label: Location
         name: location
         required: false
+        hint: "A discrete location. For example: 'Cedar River Landing'."
 
       - label: Venues
         name: venues
@@ -108,3 +111,4 @@ collections:
       - label: Last Mod
         name: lastmod
         widget: datetime
+        
