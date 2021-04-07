@@ -1,66 +1,85 @@
 backend:
-  name: github
-  repo: SummittDweller/compass-rose-band
+  name: git-gateway
   branch: main
-media_folder: 'static/images'
-public_folder: /images
+
+## To make local_backend mode work you must run 'npx netlify-cms-proxy-server &'
+##   from the project root.
+## Also, use 'git local' (aliased in .gitconfig) to remove the 'site' prefix from each
+##   of the path values below.  Use 'git restore' to change it back.
+local_backend: true
+
+# backend:
+#   name: github
+#   repo: SummittDweller/wieting-theatre-netlify
+#   branch: main
+
+media_folder: site/static/img    # site/static/img
+public_folder: /img
+
 collections:
-  - name: 'performance'
-    label: 'Performance'
-    folder: 'content/performance'
+  - name: performance
+    label: Performance
+    folder: site/content/performance    # site/content/performance
     create: true
     slug: '{{slug}}'
-    path: '{{year}}/{{slug}}'
-    preview_path: '{{year}}/{{slug}}'
-    preview_path_date_field: date
-    sort: "date:desc"
-    sortable_fields: [ 'date', 'lastmod' ]
-    view_groups:
-      - label: Year
-        field: date
-        # groups items based on the value matched by the pattern
-        pattern: \d{4}
-      - label: Drafts
-        field: draft
     editor:
       preview: true
+
     fields:
+
       - label: Title
         name: title
+        widget: string
+        required: true
+
       - label: Type
         name: type
         default: performance
-      - label: Date
-        name: date
-        hint: Enter the date of the performance.
-      - label: Start Time
-        name: startTime
-      - label: End Time
-        name: endTime
-      - label: City
-        name: city
+
       - label: Body
         name: body
         widget: markdown
+        required: false
+
+      - label: Description
+        name: description
+        widget: string
+        hint: "Populates the 'description' field."
+        required: false
+
       - label: Publish Date
         name: publishDate
         widget: date
-      - label: Last Mod
-        name: lastmod
-        widget: datetime
+
+      - label: Date
+        name: date
+        hint: Enter the date of the performance.
+
+      - label: Start Time
+        name: startTime
+
+      - label: End Time
+        name: endTime
+
+      - label: City
+        name: city
+
       - label: Location
         name: location
         required: false
-      - label: Draft Status
-        name: draft
-        widget: boolean
-        default: false
-      - label: Description
-        name: description
-        required: false
+
       - label: Venues
         name: venues
         widget: list
         default: [" "]
         comment: "Enter comma separated values."
         required: false
+
+      - label: Draft Status
+        name: draft
+        widget: boolean
+        default: false
+
+      - label: Last Mod
+        name: lastmod
+        widget: datetime
