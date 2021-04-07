@@ -19,9 +19,34 @@ public_folder: /img
 collections:
   - name: performance
     label: Performance
+    identifier_field: date
     folder: site/content/performance    # site/content/performance
     create: true
+    
     slug: '{{slug}}'
+    path: '{{year}}/{{slug}}'
+    preview_path: '{{year}}/{{slug}}'
+    preview_path_date_field: date
+    
+    sortable_fields: [ 'date', 'lastmod', 'location', 'city' ]
+    sort: 'date:desc'
+    
+    view_groups:
+      - label: 'Date:'
+        field: date
+        pattern: \d{4}-\d{2}
+      - label: 'Location:'
+        field: location  
+      - label: 'City:'
+        field: city  
+      - label: 'Draft:'
+        field: draft
+    
+    view_filters:
+      - label: "Current Year"
+        field: date
+        pattern: '2021'
+    
     editor:
       preview: true
 

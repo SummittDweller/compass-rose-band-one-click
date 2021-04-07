@@ -13,13 +13,13 @@ local_backend: true
 #   repo: SummittDweller/wieting-theatre-netlify
 #   branch: main
 
-media_folder: site/static/img    # site/static/img
+media_folder: static/img    # site/static/img
 public_folder: /img
 
 collections:
   - name: performance
     label: Performance
-    folder: site/content/performance    # site/content/performance
+    folder: content/performance    # site/content/performance
     create: true
     slug: '{{slug}}'
     editor:
