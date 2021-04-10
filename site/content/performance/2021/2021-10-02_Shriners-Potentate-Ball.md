@@ -14,14 +14,5 @@ startTime: 9pm
 location: Des Moines Airport Holiday Inn
 description: Text about this post
 publishDate: 2021-01-10
-lastmod: 2021-04-10T18:38:50.738Z
+lastmod: 2021-04-10T18:43:15.159Z
 ---
-This is the **body** of the message.
-
-# This is a heading.
-
-This is a list:
-
-* of things
-
-  more things.
