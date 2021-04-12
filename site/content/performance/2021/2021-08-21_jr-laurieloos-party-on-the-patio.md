@@ -15,4 +15,10 @@ description: $10 cover at the door to pay for the band. Bring your lawn chairs
 publishDate: 2021-04-12T02:22:02.069Z
 lastmod: 2021-04-12T02:22:02.086Z
 ---
+<!--StartFragment-->
+
+$10 cover at the door to pay for the band. Bring your lawn chairs and coolers for an evening outdoors with great friends and music!
+
+<!--EndFragment-->
+
 ![]()
