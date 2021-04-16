@@ -1,5 +1,5 @@
 ---
-title: Shriners New Year's Eve Party
+title: Za Ga Zig Shriners New Year's Eve Party
 type: performance
 date: 2021-12-31
 startTime: 8pm
