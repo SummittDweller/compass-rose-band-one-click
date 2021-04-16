@@ -10,6 +10,7 @@ location: "Airport Holiday Inn "
 venues:
   - " "
 draft: false
+description: Details coming soon!
 publishDate: 2021-04-16T02:29:40.465Z
 lastmod: 2021-04-16T02:29:40.485Z
 ---
