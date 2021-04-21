@@ -5,7 +5,7 @@ date: 2021-12-31
 startTime: 8pm
 endTime: 12am
 city: Altoona, IA
-location: Za a Zig Shrine
+location: Za-Ga-Zig Shrine Temple
 # Enter comma separated values.
 venues:
   - " "
