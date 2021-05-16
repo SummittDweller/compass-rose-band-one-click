@@ -2,8 +2,8 @@
 title: Papa Juans Grand Reopening
 type: performance
 date: 2021-05-22
-startTime: 7pm
-endTime: 11pm
+startTime: 6pm
+endTime: 10pm
 city: Cedar Rapids, IA
 location: Papa Juan's Mexican Restaurant
 # Enter comma separated values.
