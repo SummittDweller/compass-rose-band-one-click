@@ -2,8 +2,8 @@
 title: Compass Rose at Cedar Rapids Country Club - Members Only
 type: performance
 date: 2021-07-02
-startTime: 6:00 PM
-endTime: 9:00 PM
+startTime: 5:30 PM
+endTime: 8:30 PM
 # Enter comma separated values.
 venues:
   - " "
