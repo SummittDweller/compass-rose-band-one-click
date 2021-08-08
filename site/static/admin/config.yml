@@ -3,7 +3,7 @@ backend:
   branch: main
 
 ## For local_backend to work run 'npx netlify-cms-proxy-server &' from the project root.
-local_backend: true
+local_backend: true 
 
 # backend:
 #   name: github
