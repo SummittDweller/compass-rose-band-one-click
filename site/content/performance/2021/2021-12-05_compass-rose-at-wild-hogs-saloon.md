@@ -1,7 +1,7 @@
 ---
 title: Compass Rose at Wild Hogs Saloon
 type: performance
-date: 2021-12-05
+date: 2021-12-19
 startTime: 3pm
 endTime: 7pm
 city: Walford, Iowa
